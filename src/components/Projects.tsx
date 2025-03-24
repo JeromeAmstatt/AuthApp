@@ -2,13 +2,14 @@
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
 
 const projects = [
     {
         id: 1,
         title: "E-Commerce Platform",
         description: "A full-featured online shopping platform with React frontend and Node.js backend.",
-        image: "https://images.unsplash.com/photo-1661956602944-249bcd04b63f?q=80&w=2070&auto=format&fit=crop",
+        image: "/photo1.jpg",
         tech: ["React", "Node.js", "MongoDB", "Stripe"],
         github: "#",
         live: "#",
@@ -17,7 +18,7 @@ const projects = [
         id: 2,
         title: "AI Task Manager",
         description: "Task management app with AI-powered prioritization and scheduling suggestions.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+        image: "/photo2.jpg",
         tech: ["Next.js", "OpenAI API", "Tailwind CSS", "Supabase"],
         github: "#",
         live: "#",
@@ -26,7 +27,7 @@ const projects = [
         id: 3,
         title: "Real-time Chat App",
         description: "Instant messaging application with real-time updates and file sharing.",
-        image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2070&auto=format&fit=crop",
+        image: "/photo3.jpg",
         tech: ["React", "Firebase", "WebSockets", "TypeScript"],
         github: "#",
         live: "#",
@@ -53,11 +54,13 @@ export default async function Projects() {
                             style={{ animationDelay: `${index * 0.1}s` }}
                         >
                             <div className="h-52 overflow-hidden">
-                                <img
+                                <Image
                                     src={project.image}
                                     alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                                     loading="lazy"
+                                    width={500}
+                                    height={500}
                                 />
                             </div>
                             <CardContent className="p-6">

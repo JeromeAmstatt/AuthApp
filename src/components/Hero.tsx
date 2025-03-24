@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
+import Link from 'next/link';
 
 export default function Hero() {
     return (
@@ -18,8 +19,8 @@ export default function Hero() {
                             src="/images/panda.png"
                             alt="Panda with laptop"
                             className={`w-full h-full object-contain animate-spin-slow`}
-                            width={320}
-                            height={320}
+                            width={500}
+                            height={500}
                             loading="eager"
                         />
                     </div>
@@ -39,9 +40,9 @@ export default function Hero() {
                     </div>
 
                     <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-pulse-slow mt-20">
-                        <a href="#projects" aria-label="Scroll down">
+                        <Link href="#projects" aria-label="Scroll down">
                             <ArrowDown className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </section>

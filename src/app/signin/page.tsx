@@ -2,12 +2,12 @@
 
 import {LoginGoogle} from "@/components/Logingoogle";
 import {LoginGit} from "@/components/Logingit";
+import SigninForm from "@/components/signin-form-demo";
 
-export default function LoginPage() {
+export default function SignInPage() {
     return (
         <div>
-            <LoginGoogle />
-            <LoginGit />
+            <SigninForm />
         </div>
     )
 }

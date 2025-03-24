@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const Navbar2 = () => {
@@ -76,13 +75,13 @@ const Navbar2 = () => {
                             </button>
 
                             <button className='rounded-lg p-2 font-bold text-lg text-black hover:bg-[#16a249] hover:text-white'>
-                                <Link href="/">Dev'Aura</Link>
+                                <Link href="/">Dev&apos;Aura</Link>
                             </button>
                             <button className='rounded-lg p-2 text-lg text-black hover:bg-[#16a249] hover:text-white'>
-                                <Link href="/register">Inscription</Link>
+                                <Link href="/signup">Inscription</Link>
                             </button>
                             <button className='rounded-lg p-2 text-lg text-black hover:bg-[#16a249] hover:text-white'>
-                                <Link href="/login">Connexion</Link>
+                                <Link href="/signin">Connexion</Link>
                             </button>
                         </div>
 
@@ -139,7 +138,7 @@ const Navbar2 = () => {
                                 </Link>
                             </button>
                             <button className='flex justify-center items-center m-2 rounded-lg p-2 font-bold text-lg text-black px-10 py-2.5 bg-[#16a249]'>
-                                <Link href="/">Dev'Aura</Link>
+                                <Link href="/">Dev&apos;Aura</Link>
                             </button>
                             <button className='flex justify-center items-center m-2 rounded-lg p-2 text-lg font-bold text-black px-10 py-2.5 bg-[#16a249]'>
                                 <Link href="/register">Inscription</Link>
