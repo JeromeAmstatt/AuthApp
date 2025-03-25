@@ -42,7 +42,7 @@ const Navbar2 = () => {
             <div className="container mx-auto px-4 md:px-6">
                 <nav className="flex items-center justify-between">
                     <Link
-                        href="#"
+                        href="/"
                         className="text-xl font-bold tracking-tight flex items-center gap-2"
                         onClick={handleLogoClick}
                     >
@@ -54,7 +54,7 @@ const Navbar2 = () => {
                     <div className="hidden text-lg md:flex items-center space-x-4">
                         <div className="flex items-center space-x-4">
                             <button className='rounded-lg p-2 text-lg text-black hover:bg-[#16a249] hover:text-white'>
-                                <Link href="/" className="nav-link">
+                                <Link href="#projects" className="nav-link">
                                     Projects
                                 </Link>
                             </button>

@@ -1,12 +1,13 @@
 "use client";
 
-import {LoginGoogle} from "@/components/Logingoogle";
-import {LoginGit} from "@/components/Logingit";
 import SigninForm from "@/components/signin-form-demo";
+import Navbar2 from "@/components/Navbar2";
 
 export default function SignInPage() {
+    
     return (
-        <div>
+        <div className="flex flex-1 justify-center items-center min-h-screen max-screen">
+            <Navbar2 />
             <SigninForm />
         </div>
     )
